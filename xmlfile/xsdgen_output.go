@@ -554,7 +554,8 @@ type LinkType struct {
 }
 
 type LinkedTextType struct {
-	Ref []RefTextType `xml:" ref,omitempty" json:",omitempty"`
+	Type string        `xml:",chardata" json:",omitempty"`
+	Ref  []RefTextType `xml:" ref,omitempty" json:",omitempty"`
 }
 
 type ListingType struct {
